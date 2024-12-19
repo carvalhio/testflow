@@ -1,0 +1,32 @@
+﻿# encoding: utf-8
+
+<h1>Lista de Exames</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Série</th>
+      <th>Disciplina</th>
+      <th>Turno</th>
+      <th>Professor</th>
+      <th>Etapa</th>
+      <th>Tipo</th>
+      <th>Data</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @exams.each do |exam| %>
+      <tr>
+        <td><%= exam.grade.name %></td>
+        <td><%= exam.subject.name %></td>
+        <td><%= exam.shift.name %></td>
+        <td><%= exam.professor.name %></td>
+        <td><%= exam.step %></td>
+        <td><%= exam.exam_type %></td>
+        <td><%= exam.date %></td>
+        <td><%= exam.status %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

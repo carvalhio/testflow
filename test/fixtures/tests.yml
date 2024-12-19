@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2024-12-19
+  step: MyString
+  type: 
+  subject: one
+  grade: one
+  shift: one
+  professor: one
+  status: MyString
+
+two:
+  date: 2024-12-19
+  step: MyString
+  type: 
+  subject: two
+  grade: two
+  shift: two
+  professor: two
+  status: MyString
